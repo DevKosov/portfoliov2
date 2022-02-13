@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Rubik:wght@300;400&family=Source+Code+Pro:wght@900&family=Space+Mono&display=swap");
+:root {
+  --background2:#0a202f;
+  --background:#0a0c2f;
+  --white:#fbfffe;
+  --lBlue:#64ffda;
+  --cb: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+  background: var(--background);
+  color: var(--white);
+}
+
+a {
+  text-decoration: none;
+}
+
+#Logo {
+  height: 60px;
+  margin: 20px 10px 20px 10px;
+}
+
+.logo {
+  fill: var(--lBlue);
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: space mono;
+  padding-left: 2.5em;
+}
+
+nav ul {
+  padding-right: 5em;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+nav ul a {
+  margin: 10px 20px 10px 20px;
+}
+
+nav ul a li {
+  color: var(--white);
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  font-size: .7em;
+}
+
+nav ul a li:hover {
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  color: var(--lBlue);
+}
+
+span {
+  color: var(--lBlue);
+}
+
+#socials {
+  position: fixed;
+  bottom: 0;
+  margin-left: 3em;
+  text-align: center;
+}
+
+#socials ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding: 0;
+}
+
+#socials ul a {
+  margin: 10px 0px 10px 0px;
+}
+
+#socials ul a li {
+  color: var(--white);
+  font-size: .7em;
+}
+
+#socials ul a li .socials {
+  opacity: .8;
+  width: 25px;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  fill: var(--white);
+}
+
+#socials ul a li .socials:hover {
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  opacity: 1;
+  fill: var(--lBlue);
+}
+
+.rect {
+  fill: var(--white);
+}
+
+.titleRect {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#email {
+  position: fixed;
+  bottom: 0;
+  right: 3em;
+  text-align: center;
+  width: 25px;
+}
+
+#email ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding: 0;
+}
+
+#email ul a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  opacity: .8;
+  -webkit-transform: translate(22px, -15.25em) rotate(90deg);
+          transform: translate(22px, -15.25em) rotate(90deg);
+  color: var(--white);
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  letter-spacing: 2;
+  font-size: .8em;
+  font-family: space mono;
+}
+
+#email ul a li {
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+#email ul a:hover {
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  opacity: 1;
+  -webkit-transform: translate(22px, -16.5em) rotate(90deg);
+          transform: translate(22px, -16.5em) rotate(90deg);
+  color: var(--lBlue);
+}
+
+#email .rect {
+  fill: var(--white);
+}
+
+#main {
+  min-height: 100vh;
+}
+
+#main p {
+  max-width: 500px;
+}
+
+section {
+  margin: auto;
+  width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+h1 {
+  font-family: 'Calibre','Inter','San Francisco','SF Pro Text',-apple-system,system-ui,sans-serif;
+  font-size: 4em;
+  font-weight: 900;
+  opacity: .9;
+  margin: 0 0 0px 0;
+}
+
+h2 {
+  font-family: 'Calibre','Inter','San Francisco','SF Pro Text',-apple-system,system-ui,sans-serif;
+  font-size: 3em;
+  font-weight: 600;
+  opacity: .6;
+  margin: 0 0 15px 0;
+}
+
+h3 {
+  font-family: space mono, monospace;
+  margin: 0 0 0px 0;
+  color: var(--lBlue);
+}
+
+h4 {
+  font-family: space mono, monospace;
+  margin: 0 0 10px 0;
+  opacity: .9;
+}
+
+p {
+  font-family: 'Calibre','Inter','San Francisco','SF Pro Text',-apple-system,system-ui,sans-serif;
+  margin-bottom: 15px;
+}
+
+#about .theImage {
+  width: 300px;
+}
+
+.theImage {
+  width: 400px;
+  margin: 0;
+  border-radius: 15px;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.theImage:hover {
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.theImage .circleClip {
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.theImage .filler {
+  opacity: .5;
+  width: 1000px;
+  height: 700px;
+  fill: var(--lBlue);
+}
+
+.container-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container-two div {
+  max-width: calc(50% - 40px);
+  margin: 20px;
+}
+
+.container-two ul {
+  list-style: disc;
+  margin-right: 30px;
+}
+
+.container-two h3 {
+  font-family: space mono, monospace;
+  font-size: 1.5em;
+  margin: 20px 20px 20px 0px;
+  color: var(--white);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--lBlue);
+  border-radius: 15px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+::-moz-selection {
+  background: black;
+}
+
+::selection {
+  background: black;
+}
+/*# sourceMappingURL=index.css.map */
