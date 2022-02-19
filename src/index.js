@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import {gsap, Power1} from "gsap";
 import Navbar from './navbar.js'
 import Socials from './socials.js'
+import MainDisplay from './mainDisplay.js'
+import About from './about.js'
 
 ReactDOM.render(
     <React.StrictMode>
@@ -18,7 +20,13 @@ ReactDOM.render(
   document.getElementById('SocialZone')
 );
 
-
+ReactDOM.render(
+  <React.StrictMode>
+    <MainDisplay/>
+    <About/>
+  </React.StrictMode>,
+  document.getElementById('DisplayZone')
+);
 
 
 

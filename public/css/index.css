@@ -14,6 +14,7 @@ body, html {
   margin: 0;
   background: var(--background);
   color: var(--white);
+  overflow-x: hidden;
 }
 
 a {
@@ -244,35 +245,69 @@ p {
   margin-bottom: 15px;
 }
 
-#about .theImage {
-  width: 300px;
+.filterImg {
+  position: relative;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
 }
 
-.theImage {
-  width: 400px;
+.filterImg .imgg {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  -webkit-filter: grayscale(80%);
+          filter: grayscale(80%);
+}
+
+.filterImg .theImage {
+  padding: 0;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
   margin: 0;
   border-radius: 15px;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
 }
 
-.theImage:hover {
+.filterImg .theImage .circleClip {
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
+}
+
+.filterImg .theImage .filler {
+  opacity: 0.5;
+  fill: var(--lBlue);
+}
+
+.filterImg .theImage .bottom {
+  fill: red;
+  opacity: 0;
+}
+
+.filterImg:hover {
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.filterImg:hover .imgg {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+.filterImg:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }
 
-.theImage .circleClip {
-  -webkit-transition: all .3s ease-out;
-  transition: all .3s ease-out;
-}
-
-.theImage .filler {
-  opacity: .5;
-  width: 1000px;
-  height: 700px;
-  fill: var(--lBlue);
+.imgg:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
 }
 
 .container-two {
@@ -288,7 +323,7 @@ p {
       flex-wrap: wrap;
 }
 
-.container-two div {
+.container-two > div {
   max-width: calc(50% - 40px);
   margin: 20px;
 }

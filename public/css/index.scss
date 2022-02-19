@@ -12,6 +12,7 @@ body,html{
    margin:0;
    background: var(--background);
    color:var(--white);
+   overflow-x: hidden;
 }
 a{
    text-decoration: none;
@@ -173,37 +174,57 @@ p{
    margin-bottom: 15px;
 }
 
-#about{
+
+.filterImg{
+   position: relative;
+   transition: all .3s ease-out;
+   .imgg{
+      position: relative;
+      background-size:cover;
+      background-position:center;
+      border-radius:15px;
+      transition: all .3s ease-out;
+      filter: grayscale(80%);
+         
+      }
    .theImage{
-      width:300px;
+      padding:0;
+      position:absolute; top:0px; right:0px; bottom:0px; left:0px;
+		margin:0;
+		border-radius:15px;
+		transition: all .3s ease-out;
+		.circleClip{
+			transition: all .3s ease-out;
+		}
+		.filler{
+			opacity: 0.5;
+			fill:var(--lBlue);
+		}
+		.bottom{
+			fill:red;
+			opacity:0;
+		}
+	}
+   &:hover{
+      .imgg{
+         filter: grayscale(0%);
+      }
+      transition: all .3s ease-out;
+      &{
+         transform: scale(1.02);
+      }
    }
+}
+.imgg:hover{
+   filter: grayscale(0%);
 }
 
-.theImage{
-   width:400px;
-   margin:0;
-   border-radius:15px;
-   transition: all .3s ease-out;
-   &:hover{
-      transition: all .3s ease-out;
-      transform: scale(1.02);
-   }
-   .circleClip{
-      transition: all .3s ease-out;
-   }
-   .filler{
-      opacity: .5;
-      width: 1000px;
-      height: 700px;
-      fill:var(--lBlue);
-   }
-}
 .container-two{
    display: flex;
    flex-direction: row;
    width: 100%;
    flex-wrap: wrap;
-   div{
+   >div{
       max-width: calc(50% - 40px);
       margin: 20px;
    }
