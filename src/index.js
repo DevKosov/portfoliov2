@@ -5,6 +5,7 @@ import Navbar from './navbar.js'
 import Socials from './socials.js'
 import MainDisplay from './mainDisplay.js'
 import About from './about.js'
+import Img from './image.js'
 
 ReactDOM.render(
     <React.StrictMode>

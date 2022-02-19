@@ -184,8 +184,8 @@ p{
       background-position:center;
       border-radius:15px;
       transition: all .3s ease-out;
-      filter: grayscale(80%);
-         
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
       }
    .theImage{
       padding:0;
@@ -207,16 +207,12 @@ p{
 	}
    &:hover{
       .imgg{
+         -webkit-filter: grayscale(0%);
          filter: grayscale(0%);
       }
       transition: all .3s ease-out;
-      &{
-         transform: scale(1.02);
-      }
+      transform: scale(1.02);
    }
-}
-.imgg:hover{
-   filter: grayscale(0%);
 }
 
 .container-two{

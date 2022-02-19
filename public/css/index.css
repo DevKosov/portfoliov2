@@ -258,8 +258,8 @@ p {
   border-radius: 15px;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
-  -webkit-filter: grayscale(80%);
-          filter: grayscale(80%);
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .filterImg .theImage {
@@ -293,21 +293,13 @@ p {
 .filterImg:hover {
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
-}
-
-.filterImg:hover .imgg {
-  -webkit-filter: grayscale(0%);
-          filter: grayscale(0%);
-}
-
-.filterImg:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }
 
-.imgg:hover {
+.filterImg:hover .imgg {
   -webkit-filter: grayscale(0%);
-          filter: grayscale(0%);
+  filter: grayscale(0%);
 }
 
 .container-two {
