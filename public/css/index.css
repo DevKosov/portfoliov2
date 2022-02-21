@@ -255,7 +255,7 @@ p {
   position: relative;
   background-size: cover;
   background-position: center;
-  border-radius: 15px;
+  border-radius: 7.5px;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
   -webkit-filter: grayscale(100%);
@@ -270,7 +270,7 @@ p {
   bottom: 0px;
   left: 0px;
   margin: 0;
-  border-radius: 15px;
+  border-radius: 7.5px;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
 }
@@ -313,11 +313,12 @@ p {
   width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 .container-two > div {
   max-width: calc(50% - 40px);
-  margin: 20px;
+  margin: 0px 20px 0px 20px;
 }
 
 .container-two ul {
@@ -330,6 +331,55 @@ p {
   font-size: 1.5em;
   margin: 20px 20px 20px 0px;
   color: var(--white);
+}
+
+.experience aside {
+  max-width: 150px;
+  min-width: 150px;
+  text-align: center;
+  background-color: #0a202f;
+}
+
+.experience aside ul {
+  list-style: none;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.experience aside ul a {
+  color: var(--white);
+  font-family: space mono, monospace;
+}
+
+.experience aside ul a:hover {
+  color: var(--lBlue);
+}
+
+.experience aside ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top: 1px var(--white) solid;
+  min-width: 150px;
+  height: 67px;
 }
 
 /* width */
