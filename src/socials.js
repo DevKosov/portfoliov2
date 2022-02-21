@@ -1,12 +1,6 @@
 import React from 'react';
 import Linkedin from './svg/linkedin.js'
 
-const socials = [
-   {
-      //TODO
-   }
-]
-
 const LeftSocials = () => {
   return (
     <div id="socials">

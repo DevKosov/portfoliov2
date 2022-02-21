@@ -14,6 +14,8 @@ const Img = (props) => {
 
    const ConditionalWrapper = ({ condition, wrapper, children }) => condition ? wrapper(children) : children;
 
+
+   const viewBox = `0 0 ${width} ${height}`;
 	return (
       <div>
          <ConditionalWrapper
@@ -23,7 +25,7 @@ const Img = (props) => {
             <div className="filterImg" >
             
                <div className="imgg" style={{ backgroundImage: `url(${img_url})`, width: width, height: height }}></div>
-               <svg className="theImage" data-id={"shape"+id} width={width} height={height} viewBox={"0 "+ "0 "+ width + " " + height} onMouseOver={mouseOver.bind(this)} onMouseOut={mouseOut.bind(this)}>
+               <svg className="theImage" data-id={"shape"+id} width={width} height={height} viewBox={viewBox} onMouseOver={mouseOver.bind(this)} onMouseOut={mouseOut.bind(this)}>
                   <defs>
                      <clipPath id={"shape" + id}>
                         <circle className="circleClip" cy={height / 2} cx={width / 2} r={radius} />
