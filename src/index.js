@@ -5,6 +5,7 @@ import Navbar from './navbar.js'
 import Socials from './socials.js'
 import MainDisplay from './mainDisplay.js'
 import About from './about.js'
+import Experience from './components/experience/experience.js'
 
 ReactDOM.render(
     <React.StrictMode>
@@ -24,6 +25,7 @@ ReactDOM.render(
   <React.StrictMode>
     <MainDisplay/>
     <About/>
+    <Experience />
   </React.StrictMode>,
   document.getElementById('DisplayZone')
 );
