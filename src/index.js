@@ -7,6 +7,7 @@ import MainDisplay from './mainDisplay.js'
 import About from './about.js'
 import Experience from './components/experience/experience.js'
 import Experiments from './components/experiments/experiments.js'
+import Contact from "./contact";
 
 ReactDOM.render(
    <React.StrictMode>
@@ -28,9 +29,11 @@ ReactDOM.render(
       <About />
       <Experience />
       <Experiments />
+      <Contact/>
    </React.StrictMode>,
    document.getElementById('DisplayZone')
 )
+
 
 gsap
    .timeline()

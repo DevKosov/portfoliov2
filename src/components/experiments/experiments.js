@@ -28,20 +28,20 @@ const list = [
       link: 'https://codepen.io/DevKosov/pen/abzjKxe',
    },
    {
-      key: 4,
-      name: 'Ensari Clock',
-      desc: 'Une horloge en temps réel. ',
-      image: 'images/4.png',
-      languages: ['JS', 'SVG', 'Adobe Illustrator'],
-      link: 'https://codepen.io/DevKosov/pen/KKwmmdZ',
-   },
-   {
       key: 7,
       name: 'Ping checker',
       desc: 'Evolution de la connexion internet tout au long de la semaine.',
       image: 'images/ping.png',
       languages: ['Python', 'MySQL', 'Grafana'],
       link: 'https://github.com/DevKosov/Ping_checker',
+   },
+   {
+      key: 4,
+      name: 'Ensari Clock',
+      desc: 'Une horloge en temps réel. ',
+      image: 'images/4.png',
+      languages: ['JS', 'SVG', 'Adobe Illustrator'],
+      link: 'https://codepen.io/DevKosov/pen/KKwmmdZ',
    },
    {
       key: 8,

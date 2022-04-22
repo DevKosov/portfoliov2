@@ -38,6 +38,23 @@ a {
 .logo {
    fill: var(--lBlue);
 }
+.blueFill {
+   fill: var(--lBlue);
+}
+.hiddenNavbar{
+   transition: all 0.3s ease-in-out;
+   opacity: .5;
+   a{
+      #Logo{
+         transition: all 0.7s var(--cb);
+         margin-top: 5px;
+         margin-bottom: 5px;
+      }
+   }
+   &:hover{
+      opacity: 1;
+   }
+}
 nav {
    width: 100%;
    position: fixed;
@@ -45,12 +62,22 @@ nav {
    align-items: center;
    font-family: space mono;
    padding-left: 2.5em;
+   transform: translateY(0px);
+   transition: all 0.3s ease-in-out;
+   background-color: var(--background);
+   z-index: 99999;
+   a{
+      svg{
+         transition: all 0.7s var(--cb);
+      }
+   }
    ul {
       padding-right: 5em;
       width: 100%;
       display: flex;
       list-style: none;
       justify-content: end;
+      transition: all 0.7s var(--cb);
       a {
          margin: 10px 20px 10px 20px;
          li {
@@ -125,10 +152,10 @@ span {
          left: 0;
          transform-origin: 0 0;
          opacity: 0.8;
-         transform: translate(22px, -15.25em) rotate(90deg);
+         transform: translate(22px, -19em) rotate(90deg);
          color: var(--white);
          transition: all 0.3s ease-out;
-         letter-spacing: 2;
+         letter-spacing: 2px;
          font-size: 0.8em;
          font-family: space mono;
          li {
@@ -137,7 +164,7 @@ span {
          &:hover {
             transition: all 0.3s ease-out;
             opacity: 1;
-            transform: translate(22px, -16.5em) rotate(90deg);
+            transform: translate(22px, -21.5em) rotate(90deg);
             color: var(--lBlue);
          }
       }
@@ -196,12 +223,26 @@ p {
 .filterImg {
    position: relative;
    transition: all 0.3s ease-out;
+   margin-bottom: 20px;
+   transition-delay: 0.2s;
+   .bgSquare {
+      position: absolute;
+      opacity: 0.6;
+      top: 0;
+      left: 0;
+      border-bottom: 20px solid var(--lBlue);
+      border-right: 20px solid var(--lBlue);
+      border-radius: 7.5px;
+      transition: all 0.3s ease-out;
+      transition-delay: 0.2s;
+      z-index: -1;
+   }
    .imgg {
       position: relative;
       background-size: cover;
       background-position: center;
       border-radius: 7.5px;
-      transition: all 0.3s ease-out;
+
       -webkit-filter: grayscale(100%);
       filter: grayscale(100%);
    }
@@ -232,7 +273,13 @@ p {
          -webkit-filter: grayscale(0%);
          filter: grayscale(0%);
       }
+      .bgSquare {
+         transition-delay: 0.2s;
+         transform: translateX(10px) translateY(10px);
+         transition: all 0.3s ease-out;
+      }
       transition: all 0.3s ease-out;
+      transition-delay: 0.2s;
       transform: scale(1.02);
    }
 }

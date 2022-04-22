@@ -1,6 +1,7 @@
 import React from 'react'
 import Img from './image.js'
 import SectionTitle from './SectionTitle.js'
+import Mail from './svg/mail.js'
 
 const About = () => {
    return (
@@ -10,44 +11,46 @@ const About = () => {
          <div className='container-two'>
             <div>
                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem
-                  illum similique inventore illo omnis officiis rerum ipsam
-                  repellendus iste quas deleniti minus quisquam natus excepturi
-                  voluptas autem amet, ad praes4entium.
+                  Bonjour ! Je m'appelle Altin et j'aime créer des objets qui vivent sur Internet.
+                  Mon intérêt pour le développement Web a commencé en 2017 lorsque j'ai commencé à apprendre les bases
+                  du HTML et du CSS en autonomie. Plus j'en apprenais, plus j'étais curieux de savoir comment les
+                  applications Web complexes étaient faites.
                </p>
                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem
-                  illum similique inventore illo omnis officiis rerum ipsam
-                  repellendus iste quas deleniti minus quisquam natus excepturi
-                  voluptas autem amet, ad praesentium.
+                  Aujourd'hui, je suis étudiant en informatique à <b>l'Université de Grenoble Alpes (UGA).</b> Actuellement à la
+                  recherche d'une <b>alternance Informatique</b> pour pouvoir continuer mes études en Licence
+                  Professionnelle Métiers d'informatique Application Web (LP MI AW).
                </p>
                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem
-                  illum similique inventore illo omnis officiis rerum ipsam
-                  repellendus iste quas deleniti minus quisquam natus excepturi
-                  voluptas autem amet, ad praesentium.
+                  Je suis motivé et enthousiaste à l'idée d'apprendre de nouvelles technologies Web. Récemment,
+                  j'ai commencé à apprendre <b>React</b> en autonomie donc j'ai décidé de faire ce portfolio avec.
+               </p>
+               <p>
+                  Voici une liste des technologies avec lesquelles j'ai travaillé récemment :
                </p>
                <div className='container-two'>
                   <ul>
-                     <li>HTML</li>
-                     <li>CSS</li>
                      <li>JavaScript</li>
                      <li>React</li>
+                     <li>SCSS</li>
+                     <li>PHP</li>
                   </ul>
                   <ul>
-                     <li>PHP</li>
+                     <li>HTML</li>
+                     <li>JAVA</li>
                      <li>C++</li>
-                     <li>Java</li>
                      <li>SQL</li>
                   </ul>
                </div>
             </div>
-            <Img
-               id='profile'
-               width={350}
-               height={350}
-               img_url='images/me.jpg'
-            />
+            <aside>
+               <Img
+                  id='profile'
+                  width={350}
+                  height={350}
+                  img_url='images/me.jpg'
+               />
+            </aside>
          </div>
       </section>
    )

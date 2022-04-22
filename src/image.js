@@ -34,6 +34,7 @@ const Img = (props) => {
                   <rect className="bottom" width={width} height={height} />
                   <rect className="filler" width={width} height={height} clipPath={"url(#shape" + id + ")"} />
                </svg>
+               <div className="bgSquare" style={{ width: width - 20, height: height - 20 }}></div>
             </div>
          </ConditionalWrapper>
       </div>

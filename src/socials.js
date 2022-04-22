@@ -37,7 +37,7 @@ const Email = () =>{
    return(
       <div id="email">
         <ul>
-          <a href="#main"> {/* //TODO */}
+          <a href="mailTo:Altin_Rrahmani@live.com">
             <li>Altin_Rrahmani@live.com</li>
           </a>
         </ul>

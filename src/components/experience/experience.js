@@ -4,6 +4,22 @@ import Exp from './Exp'
 
 const experiences = [
    {
+      state: 'tab0',
+      title: 'MVP',
+      titleComp: "- Stage d'informatique - IUT2 - Université Grenoble Alpes",
+      duration: '10 semaines',
+      position: 'Developpeur Web',
+      shortdescription:
+         'MVP développe des applications spécifiques, mobiles, web, conformément aux attentes de ses clients.',
+      duties: [
+         `Creation de l'interaction-Homme-Machine d'un application mobile.`
+      ],
+      team: 0,
+      languages: ['JS', 'CSS', 'HTML'],
+      year: '2022 - Actuellement',
+      github: '',
+   },
+   {
       state: 'tab1',
       title: 'Tech-A-Way',
       titleComp: "- Projet d'informatique - IUT2 - Université Grenoble Alpes",
@@ -12,11 +28,11 @@ const experiences = [
       shortdescription:
          'Tech a Way est une start-up qui intervient sur le secteur du recrutement tech, en France et partout en Europe.',
       duties: [
-         'Creation et configuration du serveur VPS avec le Stack LAPP (Linux, Apache, PostgreSQL, PHP).',
-         'Creation des toutes les methodes CRUD (Create, Read, Update, Delete) en PHP.',
+         'Création et configuration du serveur VPS avec le Stack LAPP (Linux, Apache, PostgreSQL, PHP).',
+         'Création des toutes les méthodes CRUD (Create, Read, Update, Delete) en PHP.',
          'Administrateur de la base de donnees, creation des tables, modification des tables.',
-         'Securite du site web.',
-         'Animation des contenu avec GSAP, JS et SVG.',
+         'Sécurité du site web.',
+         'Animation des contenus avec GSAP, JS et SVG.',
       ],
       team: 7,
       languages: ['PHP', 'PostgreSQL', 'JS', 'SVG', 'Gitlabs'],
@@ -32,7 +48,7 @@ const experiences = [
       shortdescription: 'Genconf est une platforme de gestion des conferences.',
       duties: [
          'Conception de la platforme avec Visual Paradigm.',
-         "Creation de l'Interface Homme Machine (IHM).",
+         "Création de l'Interface Homme Machine (IHM)."
       ],
       team: 4,
       languages: ['JAVA', 'JAVA Swing', 'Gitlabs'],

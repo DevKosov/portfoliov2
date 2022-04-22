@@ -3,8 +3,8 @@ import React from 'react'
 const info = {
    name:"Altin",
    surname:"Rrahmani",
-   shortDesc:"I'm a Computer Science Student.",
-   description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptate ipsum dolorem at quidem, nullalabore. Voluptatem recusandae voluptas perferendis cum totam ipsa earum in perspiciatis? Delectus quidem quo maxime?"
+   shortDesc:"I am an interactive Front-End Student.",
+   description:"Je suis étudiant en informatique à l'IUT 2 Université de Grenoble. Je fais des sites web et de multiples mini projets interactifs en Front-end et Back-end."
 }
 
 const MainDisplay = () => {

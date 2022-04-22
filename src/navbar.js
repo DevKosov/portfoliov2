@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 
 const links = [
@@ -45,6 +45,7 @@ const Logo = () => {
 }
 
 const Links = () => {
+
 	return (
 		<ul>
          {links.map((link, index)=>{
@@ -67,8 +68,33 @@ const Links = () => {
 }
 
 const Navbar = () => {
+   const [isActive, setActive] = useState(true);
+   const [isScrolledTop, setScrolledTop] = useState(true);
+
+   React.useEffect(() => {
+
+      window.addEventListener('wheel', (e) => {
+         if (e.deltaY < 0) {
+            // go up
+            if(!isActive){
+               setActive(true);
+            }
+            if (window.scrollY<= 250){
+               setScrolledTop(true);
+            }
+         }
+         else {
+            //go down
+            if(isActive){
+               setActive(false);
+               setScrolledTop(false);
+            }
+         }
+      });
+   });
+
 	return (
-      <nav>
+      <nav className={!isActive ? 'hiddenNavbar': null} style={!isScrolledTop ? {boxShadow: "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"}:null}>
          <Logo />
          <Links />
       </nav>

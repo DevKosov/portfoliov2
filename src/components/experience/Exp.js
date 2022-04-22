@@ -9,7 +9,7 @@ const Exp = (props) => {
    return (
       <div className={cs}>
          <h3>{title} {titleComp}</h3>
-         <h4>{year}, {position} {(team) ? `- Team of : ${team}` : ""} - Duree : {duration}</h4>
+         <h4>{year}, {position} {(team) ? `- Équipe de : ${team}` : ""} - Duree : {duration}</h4>
 
          <h4>
             {languages.map((language, i, r) => {
