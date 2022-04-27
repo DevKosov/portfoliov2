@@ -1,28 +1,24 @@
 import React from 'react';
-import Linkedin from './svg/linkedin.js'
+import FeatherIcon from 'feather-icons-react';
 
 const LeftSocials = () => {
-  return (
+
+   return (
     <div id="socials">
       <ul>
-         <a href="#main">
+         <a href="https://www.linkedin.com/in/altin-rrahmani-3a547a228" target={'_blank'} rel="noreferrer">
             <li>
-            <Linkedin className="socials" />
+               <FeatherIcon icon={'linkedin'} className={'socials'}/>
             </li>
          </a>
-         <a href="#main">
+         <a href="https://github.com/DevKosov" target={'_blank'} rel="noreferrer">
             <li>
-            <Linkedin className="socials" />
+               <FeatherIcon icon={'github'} className={'socials'}/>
             </li>
          </a>
-         <a href="#main">
+         <a href="https://codepen.io/DevKosov" target={'_blank'} rel="noreferrer">
             <li>
-            <Linkedin className="socials" />
-            </li>
-         </a>
-         <a href="#main">
-            <li>
-            <Linkedin className="socials" />
+               <FeatherIcon icon={'codepen'} className={'socials'}/>
             </li>
          </a>
       </ul>

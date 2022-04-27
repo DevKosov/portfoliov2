@@ -64,8 +64,8 @@ const experiences = [
       shortdescription:
          'Le Centre Hospitalier Alpes Léman (CHAL) est un établissement public de santé, installé sur son nouveau site depuis février 2012. Historiquement, le CHAL est issu de la fusion des Centres Hospitaliers d’Annemasse et de Bonneville.',
       duties: [
-         'Conception de la platforme avec Visual Paradigm.',
-         "Creation de l'Interface Homme Machine (IHM).",
+         `Participer à l'Installation et configuration de switches sur le nouveau bâtiment du CHAL.`,
+         "Maintenance du Système d'information.",
       ],
       languages: [],
       year: '2019',

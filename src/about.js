@@ -1,7 +1,6 @@
 import React from 'react'
 import Img from './image.js'
 import SectionTitle from './SectionTitle.js'
-import Mail from './svg/mail.js'
 
 const About = () => {
    return (

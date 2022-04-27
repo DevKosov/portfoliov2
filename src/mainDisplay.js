@@ -1,4 +1,5 @@
 import React from 'react'
+import Eye from "./svg/eye";
 
 const info = {
    name:"Altin",
@@ -14,6 +15,7 @@ const MainDisplay = () => {
 		<h1>{info.name + " " + info.surname}</h1>
 		<h2>{info.shortDesc}</h2>
 		<p>{info.description}</p>
+       <Eye/>
 	</section>
   )
 }

@@ -14,7 +14,7 @@ const list = [
    {
       key: 2,
       name: 'Portfolio v2',
-      desc: "Deuxieme portfolio que je n'ai pas fini.",
+      desc: "Deuxième portfolio que je n'ai pas fini.",
       image: 'images/2.png',
       languages: ['HTML5', 'SCSS', 'JS', 'JQuery'],
       link: 'https://codepen.io/DevKosov/pen/yxdYJz',
@@ -22,15 +22,23 @@ const list = [
    {
       key: 3,
       name: 'Menu créatif',
-      desc: 'Un défi codepen hebdomadaire. Sujet menu.',
+      desc: 'Un défi Codepen hebdomadaire. Sujet menu.',
       image: 'images/3.png',
       languages: ['JQuery', 'SCSS', 'HTML5'],
       link: 'https://codepen.io/DevKosov/pen/abzjKxe',
    },
    {
+      key: 9,
+      name: 'API Star Wars',
+      desc: `Projet JS de l'université. API Star Wars qui permet de chercher des personnages.`,
+      image: 'images/10.png',
+      languages: ['JS', 'AJAX', 'HTML', 'CSS'],
+      link: 'https://codepen.io/DevKosov/pen/GezWKx',
+   },
+   {
       key: 7,
       name: 'Ping checker',
-      desc: 'Evolution de la connexion internet tout au long de la semaine.',
+      desc: 'Évolution de la connexion internet tout au long de la semaine.',
       image: 'images/ping.png',
       languages: ['Python', 'MySQL', 'Grafana'],
       link: 'https://github.com/DevKosov/Ping_checker',
@@ -62,18 +70,10 @@ const list = [
    {
       key: 6,
       name: 'Plan Forum',
-      desc: "Une 'carte' interactive en SVG",
+      desc: "Une 'carte' interactive en SVG.",
       image: 'images/6.png',
       languages: ['SVG', 'JS', 'Adobe Illustrator'],
       link: 'https://codepen.io/DevKosov/pen/QoEeZE',
-   },
-   {
-      key: 9,
-      name: 'Deplacement du produit',
-      desc: 'Page de deplacement du produit. Pour le cours de freecodecamp.',
-      image: 'images/9.png',
-      languages: ['HTML5', 'CSS', 'JS'],
-      link: 'https://codepen.io/DevKosov/pen/GezWKx',
    },
 ]
 
