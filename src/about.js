@@ -9,8 +9,7 @@ const About = () => {
 
          <div className='container-two'>
             <div>
-               <p>
-                  Bonjour ! Je m'appelle Altin et j'aime créer des objets qui vivent sur Internet.
+               <p><!-- Bonjour ! Je m'appelle Altin et j'aime créer des objets qui vivent sur Internet. -->
                   Mon intérêt pour le développement Web a commencé en 2017 lorsque j'ai commencé à apprendre les bases
                   du HTML et du CSS en autonomie. Plus j'en apprenais, plus j'étais curieux de savoir comment les
                   applications Web complexes étaient faites.
